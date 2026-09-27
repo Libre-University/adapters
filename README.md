@@ -16,6 +16,7 @@ LibreUniversity dış sistem entegrasyonları ([ADR-0007](https://github.com/Lib
 | `ObjectStorage` | S3 uyumlu (MinIO) | 1 |
 | `EmailSender` | SMTP | 1 |
 | `LiveClassroom` | Jitsi (JWT) | 3 |
+| `LiveClassroom` | BigBlueButton | 3 |
 | `PushSender` | UnifiedPush / genel | 3 |
 | `PaymentGateway` | Banka sanal POS | 4 |
 | `GovernmentIdentity` | e-Devlet | 4 |
