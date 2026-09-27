@@ -4,9 +4,9 @@ LibreUniversity dış sistem entegrasyonları ([ADR-0007](https://github.com/Lib
 
 ## Yapı
 
-- `libre-ports`: bağımlılıksız, versiyonlanan arayüz paketi (Python `Protocol` tanımları ve ortak veri tipleri). `platform-api` yalnızca bu paketi bilir.
-- Adapter paketleri: her biri bir port'u uygular ve Python entry point ile kaydolur. Hangi adapterin kullanılacağı yapılandırmayla seçilir.
-- Her adapter için sahte (fake) uygulama ve sözleşme testleri bulunur; böylece dış sistem olmadan geliştirme yapılabilir.
+- `ports`: bağımlılıksız, versiyonlanan Go paketi (`github.com/Libre-University/adapters/ports`); port arayüzleri (Go `interface`) ve ortak veri tipleri. `platform-api` yalnızca bu paketi bilir.
+- Adapter paketleri: her biri bir port'u uygular ve `init()` içinde kendini kaydeder; derleme sırasında binary'ye eklenir. Hangi adapterin kullanılacağı yapılandırmayla seçilir ([ADR-0011](https://github.com/Libre-University/docs/blob/main/docs/adr/0011-use-go-for-backend.md)).
+- Her adapter için sahte (fake) uygulama ve `ports/porttest` sözleşme testleri bulunur; böylece dış sistem olmadan geliştirme yapılabilir.
 
 ## Adapterler
 

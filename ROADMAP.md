@@ -2,8 +2,8 @@
 
 ## Faz 0: Sözleşmeler (davet öncesi)
 
-- [ ] Paket yapısı (uv workspace), CI (ruff, mypy, pytest)
-- [ ] `libre-ports` ilk taslak: `IdentityProvider`, `ObjectStorage`, `EmailSender`
+- [ ] Go modül yapısı (`ports/`, `oidc/`, `s3/`, `smtp/`, …), CI (gofmt, go vet, golangci-lint, `go test -race`)
+- [ ] `ports` ilk taslak: `IdentityProvider`, `ObjectStorage`, `EmailSender`
 - [ ] Sözleşme testi altyapısı: her adapter aynı test paketini geçmeli
 - [ ] Adapter yazma rehberi
 
@@ -12,7 +12,7 @@
 - [ ] OIDC/Keycloak adapteri ve fake uygulaması
 - [ ] S3/MinIO adapteri (imzalı URL, içerik tipi kontrolü)
 - [ ] SMTP adapteri, gönderim durumu takibi
-- [ ] `libre-ports` 0.1 sürümü
+- [ ] `ports` 0.1 sürümü
 
 ## Faz 3: LMS ve Bildirim
 
