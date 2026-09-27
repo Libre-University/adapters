@@ -26,8 +26,8 @@ LibreUniversity dış sistem entegrasyonları ([ADR-0007](https://github.com/Lib
 
 | Faz | Bu repoda yapılacaklar |
 | --- | --- |
-| Faz 0 | `libre-ports` arayüz paketi taslağı, sözleşme testi altyapısı, adapter yazma rehberi |
-| Faz 1 | OIDC/Keycloak, S3/MinIO ve SMTP adapterleri; `libre-ports` 0.1 |
+| Faz 0 | `ports` arayüz paketi taslağı, sözleşme testi altyapısı, adapter yazma rehberi |
+| Faz 1 | OIDC/Keycloak, S3/MinIO ve SMTP adapterleri; `ports` 0.1 |
 | Faz 2 | Çekirdek adapterlerin sertleştirilmesi (Faz 2'de yeni adapter yok) |
 | Faz 3 | Jitsi (JWT), Jibri kayıt arayüzü, push bildirim adapterleri |
 | Faz 4+ | Banka sanal POS, e-Devlet, YÖKSİS, ÖSYM, KEP/e-imza, LDAP/AD içe aktarımı |
